@@ -10,7 +10,7 @@ public static void main(String[] args) throws Exception {
 	Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbce13","root","root");
 	Statement statement=connection.createStatement();
 	int value=statement.executeUpdate("update user set name='chaithu' where id=200");
-	connection.close();
+//	connection.close();
 	System.out.println(value);
 	System.out.println("Data Updated successfully");
 }
